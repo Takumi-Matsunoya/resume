@@ -15,7 +15,7 @@
 
 body {
   margin: 0;
-  font-family: "BIZ UDPGothic", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+  font-family: "Noto Sans JP", "BIZ UDPGothic", "Hiragino Sans", "Yu Gothic", sans-serif;
   color: var(--text);
   background: radial-gradient(circle at 5% -10%, #cef8f1 0%, transparent 42%),
     radial-gradient(circle at 95% 0%, #dbe6ff 0%, transparent 36%),
@@ -236,8 +236,15 @@ h3 {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+
   body {
     background: #fff;
+    font-size: 10.5pt;
+    line-height: 1.55;
   }
 
   .backdrop,
@@ -257,10 +264,27 @@ h3 {
     box-shadow: none;
     border: 1px solid #c7c7c7;
     border-radius: 0;
-    page-break-inside: avoid;
+    break-inside: auto;
+    page-break-inside: auto;
+    margin: 0;
   }
 
   h1 {
     font-size: 1.5rem;
+  }
+
+  .hero {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .project-item,
+  .timeline li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .plain-list {
+    margin: 0.2rem 0 0;
   }
 }

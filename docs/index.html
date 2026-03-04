@@ -3,10 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>松野屋 巧 | SRE 職務経歴書</title>
+    <title>松野屋 巧 | 職務経歴書</title>
     <meta
       name="description"
-      content="松野屋巧のSRE職務経歴書。クラウド基盤、運用改善、障害対応、IaC推進の実績を掲載。"
+      content="松野屋巧の職務経歴書。クラウド基盤、運用改善、障害対応、IaC推進の実績を掲載。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -15,7 +21,7 @@
 
     <main class="container">
       <header class="hero">
-        <p class="badge">SRE / Platform Engineering</p>
+        <p class="badge">SRE / Platform Engineering / Infrastructure Engineering</p>
         <h1>松野屋 巧 職務経歴書</h1>
         <p class="lead">
           2006年よりインフラ・運用領域に従事。近年はSREとして、AWS基盤の信頼性向上、運用自動化、
@@ -29,7 +35,7 @@
       <section class="card" aria-labelledby="summary-heading">
         <h2 id="summary-heading">職務要約</h2>
         <p>
-          有限会社マツノヤ所属として、都内案件を中心にSRE/インフラ領域を担当しています。
+          都内案件を中心に、SRE/インフラ領域を担当しています。
           現在は食品業界案件でSREリーダーとして参画し、横断タスク調整、障害対応の指揮、
           ポストモーテム運用、Auroraメジャーバージョンアップ推進を担当しています。
           小売・自動車・不動産テック・金融など複数業界で、Terraformを軸とした
@@ -76,6 +82,19 @@
 
       <section class="card" aria-labelledby="projects-heading">
         <h2 id="projects-heading">主要プロジェクト</h2>
+
+        <article class="project-item">
+          <div class="project-head">
+            <h3>性能分析・監視設計支援（並行案件）</h3>
+            <p>2026/02 - 現在</p>
+          </div>
+          <ul class="plain-list">
+            <li>スロークエリとAPIログを突合し、性能劣化要因の特定を実施</li>
+            <li>インデックス有無と利用状況を調査し、改善優先度を整理</li>
+            <li>継続的な性能監視に向けた監視方法を設計し、運用案を提案</li>
+            <li>環境: AWS, Terraform / 言語: Java, Python</li>
+          </ul>
+        </article>
 
         <article class="project-item">
           <div class="project-head">
@@ -126,6 +145,7 @@
           <ul class="plain-list">
             <li>ログ基盤設計（Fluentd/Elasticsearch）とプラグイン開発で運用可視性を改善</li>
             <li>Terraform集約・レビュー必須化によりインフラ変更の統制を強化</li>
+            <li>性能課題のあったRailsジョブを分析し、処理を分割。ECS Fargate + Digdagで実行する構成へ刷新し、現状調査から設計・実装・運用定着までを単独で担当</li>
             <li>AWS Config/GuardDuty導入、スポット活用、RI/Savings Plansでコスト最適化</li>
             <li>新規事業提案に向けた現状課題整理と、実行計画の提案を実施</li>
             <li>環境: AWS, ECS, Digdag, Embulk, Terraform / 言語: Ruby</li>
@@ -133,14 +153,27 @@
         </article>
       </section>
 
-      <section class="card" aria-labelledby="history-heading">
-        <h2 id="history-heading">職務経歴（サマリー）</h2>
+      <section class="card" aria-labelledby="older-projects-heading">
+        <h2 id="older-projects-heading">過去プロジェクト（要約）</h2>
         <ul class="timeline">
-          <li><span>2011/10 - 現在</span><p>有限会社マツノヤ: SRE/インフラ案件に継続従事（小売、自動車、不動産テック、食品、サービス業ほか）</p></li>
-          <li><span>2008/04 - 2011/09</span><p>株式会社工芸精器製作所: システムリプレース案件で設計・構築・運用保守を担当</p></li>
-          <li><span>2006/12 - 2008/03</span><p>株式会社セラク: 通信業向けの運用保守、検証業務に従事</p></li>
+          <li>
+            <span>2017 - 2020</span>
+            <p>サービス業向けインフラ改善案件にて、セキュリティ対策、コスト最適化、監視運用改善を担当。約200台規模の環境で、ミドルウェアチューニング、バッチ処理改善、運用自動化を推進し、安定運用と運用負荷低減に貢献。<br>環境: AWS, GCP, Linux, Windows, Apache, Nginx, MySQL, Rundeck, Mackerel, Ansible<br>言語: Node.js, Bash, PHP, Go</p>
+          </li>
+          <li>
+            <span>2015 - 2017</span>
+            <p>金融・Webサービス領域の基盤構築/運用保守に従事。開発基盤（GitLab/Jenkins等）導入、監視基盤整備、障害対応、ベンダーコントロールを担当し、運用体制の標準化を推進。並行してNode.jsによるWebアプリ開発を要件定義から実装まで一貫対応。<br>環境: AWS, Linux, MySQL, Zabbix, Jenkins, GitLab, Redmine, td-agent, Nginx, Twilio, Elasticsearch<br>言語: Node.js, Bash</p>
+          </li>
+          <li>
+            <span>2012 - 2015</span>
+            <p>大規模基盤・クラウド案件に従事し、プライベートクラウド運用、監視設計、システム移行、仮想化基盤構築を担当。数百〜数千台規模の環境で、構築・運用・障害対応を通じて信頼性向上と運用効率化に取り組む。<br>環境: AWS, 自社クラウド, KDDIクラウド, Linux, Windows, VMware vSphere, Kubernetes, Docker, Zabbix, MySQL<br>言語: Bash</p>
+          </li>
+          <li>
+            <span>2006 - 2011</span>
+            <p>通信・保険・教育分野の運用保守/検証案件に従事。ネットワーク機器運用、システム検証、設計書・運用ドキュメント作成を担当し、インフラエンジニアとしての基礎となる運用・保守・改善の実務経験を蓄積。<br>環境: Windows, Linux, VMware ESX/ESXi, Oracle Database, DB2, Cisco, Juniper<br>言語: Bash</p>
+          </li>
         </ul>
-        <p class="note">公開用ページとして、直近実績を中心に再編集しています。</p>
+        <p class="note">公開向けに、直近プロジェクトは詳細、過去プロジェクトは要点中心で掲載しています。</p>
       </section>
     </main>
 
