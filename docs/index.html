@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>松野屋 巧 | SRE 職務経歴書</title>
+    <meta
+      name="description"
+      content="松野屋巧のSRE職務経歴書。クラウド基盤、運用改善、障害対応、IaC推進の実績を掲載。"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="backdrop" aria-hidden="true"></div>
+
+    <main class="container">
+      <header class="hero">
+        <p class="badge">SRE / Platform Engineering</p>
+        <h1>松野屋 巧 職務経歴書</h1>
+        <p class="lead">
+          2006年よりインフラ・運用領域に従事。近年はSREとして、AWS基盤の信頼性向上、運用自動化、
+          コスト最適化、障害対応の標準化を中心に、リモート主体で支援しています。
+        </p>
+        <div class="actions">
+          <button class="btn primary" id="printPageButton" type="button">このページを印刷</button>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">職務要約</h2>
+        <p>
+          有限会社マツノヤ所属として、都内案件を中心にSRE/インフラ領域を担当しています。
+          現在は食品業界案件でSREリーダーとして参画し、横断タスク調整、障害対応の指揮、
+          ポストモーテム運用、Auroraメジャーバージョンアップ推進を担当しています。
+          小売・自動車・不動産テック・金融など複数業界で、Terraformを軸とした
+          Infrastructure as Codeの標準化、監視基盤整備、運用改善を推進してきました。
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="strength-heading">
+        <h2 id="strength-heading">強み</h2>
+        <ul class="plain-list">
+          <li>課題の構造化から設計・実装・運用定着まで一貫して推進（IaC整備、監視改善、運用フロー標準化）</li>
+          <li>障害時の初動指揮、関係者調整、再発防止策の実装までを含めたインシデントマネジメント</li>
+          <li>大規模Terraform環境の分割・再設計・モジュール化による変更競合の抑制と生産性向上</li>
+          <li>RI/Savings Plansやスポット活用を含むコスト最適化施策の立案・実行</li>
+          <li>リモート主体の複数チーム連携における、合意形成とドキュメントベース運用</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">スキルセット</h2>
+        <div class="skill-grid">
+          <div>
+            <h3>Cloud</h3>
+            <p>AWS, GCP, KDDI Cloud</p>
+          </div>
+          <div>
+            <h3>IaC / CI-CD</h3>
+            <p>Terraform, HCP Terraform, Terraform Enterprise, Sentinel, GitHub Actions, GitLab CI, Jenkins</p>
+          </div>
+          <div>
+            <h3>Observability</h3>
+            <p>New Relic, Datadog, Zabbix, Mackerel, StatusCake, Opsgenie, Elasticsearch</p>
+          </div>
+          <div>
+            <h3>Language</h3>
+            <p>Python, Go, Rust, Ruby, Node.js, Bash, Groovy</p>
+          </div>
+          <div>
+            <h3>Platform / Middleware</h3>
+            <p>Linux, Docker, ECS, MySQL, Nginx, Apache, GitLab CE, Digdag, Embulk, Fluentd</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">主要プロジェクト</h2>
+
+        <article class="project-item">
+          <div class="project-head">
+            <h3>食品業界向けSRE（リーダー）</h3>
+            <p>2025/10 - 現在</p>
+          </div>
+          <ul class="plain-list">
+            <li>SRE横断タスク調整、開発チームとの優先度調整、メンバーアサインを担当</li>
+            <li>障害対応の指揮、関係者連携、ポストモーテム作成とナレッジ共有を推進</li>
+            <li>Auroraメジャーバージョンアップを計画から実施までリード</li>
+            <li>各種定例のファシリテーションを担当し、運用判断の迅速化に寄与</li>
+            <li>環境: AWS, Terraform, GitHub Actions, New Relic</li>
+          </ul>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <h3>小売業向け基盤構築・運用保守</h3>
+            <p>2022/12 - 2025/08</p>
+          </div>
+          <ul class="plain-list">
+            <li>Terraformコードを全社利用前提でリファクタリングし、再利用性を向上</li>
+            <li>Datadog PoCの設計・実装・運用方針策定・検証資料作成を担当</li>
+            <li>移行対応、手順書整備、ベンダーコントロールを実施</li>
+            <li>環境: AWS, Terraform, Jenkins, Datadog / 言語: Groovy, Python, Go</li>
+          </ul>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <h3>自動車製造業向け開発環境基盤</h3>
+            <p>2021/03 - 2025/03</p>
+          </div>
+          <ul class="plain-list">
+            <li>Terraform Enterprise導入に向けた大規模リファクタリングと移行を主導</li>
+            <li>tfstate分割とCI/CD整備により、競合運用を解消し変更管理を安定化</li>
+            <li>Sentinelポリシー整備、Renovate Runner導入、HCP Terraform移行ツール開発</li>
+            <li>開発環境スローダウン時のボトルネック調査・チューニングを実施</li>
+            <li>環境: AWS, Terraform, GitLab CE, HCP Terraform / 言語: Rust, Python</li>
+          </ul>
+        </article>
+
+        <article class="project-item">
+          <div class="project-head">
+            <h3>不動産テック企業SRE</h3>
+            <p>2019/05 - 2022/03</p>
+          </div>
+          <ul class="plain-list">
+            <li>ログ基盤設計（Fluentd/Elasticsearch）とプラグイン開発で運用可視性を改善</li>
+            <li>Terraform集約・レビュー必須化によりインフラ変更の統制を強化</li>
+            <li>AWS Config/GuardDuty導入、スポット活用、RI/Savings Plansでコスト最適化</li>
+            <li>新規事業提案に向けた現状課題整理と、実行計画の提案を実施</li>
+            <li>環境: AWS, ECS, Digdag, Embulk, Terraform / 言語: Ruby</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="card" aria-labelledby="history-heading">
+        <h2 id="history-heading">職務経歴（サマリー）</h2>
+        <ul class="timeline">
+          <li><span>2011/10 - 現在</span><p>有限会社マツノヤ: SRE/インフラ案件に継続従事（小売、自動車、不動産テック、食品、サービス業ほか）</p></li>
+          <li><span>2008/04 - 2011/09</span><p>株式会社工芸精器製作所: システムリプレース案件で設計・構築・運用保守を担当</p></li>
+          <li><span>2006/12 - 2008/03</span><p>株式会社セラク: 通信業向けの運用保守、検証業務に従事</p></li>
+        </ul>
+        <p class="note">公開用ページとして、直近実績を中心に再編集しています。</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Last updated: <time datetime="2026-03-04">2026-03-04</time> / © <span id="year"></span> Takumi Matsunoya</small>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
